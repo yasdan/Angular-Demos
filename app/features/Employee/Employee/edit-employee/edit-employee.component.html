@@ -1,0 +1,42 @@
+
+<div class="container">
+    <h1 class="mt-3">Edit Employee</h1>
+
+  <form #form="ngForm" (ngSubmit)="onFormSubmit()"> 
+    <div class="mt-3">
+        <label for="employeeId" class="form-control">Employee Id</label>
+        <input type="text" id="employeeId" class="form-control"
+        name="employeeId" [(ngModel)]="model.id">
+    </div> 
+    <div class="mt-3">
+        <label for="employeename" class="form-control">Employee Name</label>
+        <input type="text" id="employeename" class="form-control"
+        name="employeename" [(ngModel)]="model.name">
+    </div>
+    <div class="mt-3">
+        <label for="designation" class="form-control">Designation</label>
+        <input type="text" id="designation" class="form-control"
+        name="designation" [(ngModel)]="model.designation">
+    </div>=
+    <div class="mt-3">
+        <label for="city" class="form-control">City</label>
+        <input type="text" id="city" class="form-control"
+        name="city" [(ngModel)]="model.city">
+    </div>
+    <div class="mt-3">
+        <label for="email" class="form-control">Email</label>
+        <input type="text" id="email" class="form-control"
+        name="email" [(ngModel)]="model.email">
+    </div>
+    <div class="mt-3">
+        <label for="phone" class="form-control">Phone </label>
+        <input type="text" id="phone" class="form-control"
+        name="phone" [(ngModel)]="model.phone">
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">UPdate</button>
+    </div>"
+</form>
+</div>
+
